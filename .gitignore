@@ -1,0 +1,12 @@
+# Yarn and Node.js
+node_modules/
+.yarn/
+.yarnrc.yml
+
+# Build artifacts
+dist/
+
+build/
+.turbo
+artifacts
+cache

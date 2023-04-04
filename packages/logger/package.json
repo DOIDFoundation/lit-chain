@@ -1,0 +1,17 @@
+{
+    "name": "@lit-chain/logger",
+    "version": "2.2.0",
+    "description": "",
+    "author": "",
+    "homepage": "",
+    "license": "ISC",
+    "main": "./dist/lib/index.js",
+    "types": "./dist/lib/index.d.ts",
+    "files": [
+        "dist/**"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf node_modules .turbo dist"
+    }
+}

@@ -1,0 +1,3 @@
+Please set your INFURA_API_KEY in a .env file. Using a default(fake) one
+Nothing to compile
+No need to generate any newer typings.

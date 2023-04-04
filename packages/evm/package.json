@@ -1,0 +1,44 @@
+{
+    "name": "@lit-chain/evm",
+    "version": "2.2.0",
+    "description": "",
+    "author": "",
+    "homepage": "",
+    "license": "ISC",
+    "main": "./dist/lib/index.js",
+    "types": "./dist/lib/index.d.ts",
+    "files": [
+        "dist/**"
+    ],
+    "scripts": {
+        "build": "cp -R ../../node_modules/@lit-chain/evm-contracts/artifacts . && hardhat --config ./hardhat.config.ts typechain && tsc",
+        "clean": "rm -rf node_modules .turbo dist ./lib/typechain cache artifacts"
+    },
+    "dependencies": {
+        "@eth-optimism/sdk": "1.1.5",
+        "@ethersproject/abi": "5.7.0",
+        "@ethersproject/abstract-provider": "5.7.0",
+        "@ethersproject/abstract-signer": "5.7.0",
+        "@ethersproject/constants": "5.7.0",
+        "@ethersproject/contracts": "5.7.0",
+        "@ethersproject/providers": "5.7.0",
+        "@ethersproject/solidity": "5.7.0",
+        "@ethersproject/transactions": "5.7.0",
+        "@ethersproject/wallet": "5.7.0",
+        "@liquality/fee-suggestions": "2.0.2",
+        "@lit-chain/client": "workspace:*",
+        "@lit-chain/errors": "workspace:*",
+        "@lit-chain/logger": "workspace:*",
+        "@lit-chain/types": "workspace:*",
+        "@lit-chain/utils": "workspace:*",
+        "@metamask/eth-sig-util": "4.0.1",
+        "ethers": "5.7.0",
+        "moralis": "1.8.0"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.4",
+        "@nomiclabs/hardhat-waffle": "^2.0.2",
+        "@typechain/hardhat": "^4.0.0",
+        "hardhat": "^2.8.3"
+    }
+}
